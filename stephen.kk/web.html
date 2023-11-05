@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Haardware.Com</title>
+    <!---link to css -->
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+
+
+    <header class="heading">
+        <h2>SYSTEM HARDWARE</h2>
+        <button class="button" onclick="document.location='index2.html'">Login</button>
+    
+    </header>
+
+    <ul>
+        <li><a class="active"  href="Products.html" target="_blank">Products</a></li>
+        <li><a href="Shop.html" target="_blank">Shop</a></li>
+        <li><a href="#Cart">Cart</a></li>
+        <li><a href="#Help">Help</a></li>
+        <li><a href="Comment.html" target="_blank">Feedback</a></li>
+
+    </ul>
+
+
+
+    <section class="content">
+        <img class="mySlides"
+        src="image1.jpg" 
+        style="width: 50%">
+        <img class="mySlides"
+        src="image8.jpg" 
+        style="width: 50%">
+
+    <p class="para">Computer hardware is a collective term used to describe any of the physical components of an
+        analog or digital computer.The term hardware distinguishes the tangible aspects of a computing 
+        device from software,which consists of written, machine-readable instructions or programs that 
+        tell physical components what to do and when to execute the instructions.Hardware and software 
+        are complementary. A computing device can function efficiently and produce useful output
+        only when both hardware and software work together appropriately.Computer hardware can be categorized as being either internal or external components.
+        Generally, internal hardware components are those necessary for the proper functioning of the computer,
+        while external hardware components are attached to the computer to add or enhance functionality.</p>
+        
+</section>
+    
+<script>
+    //Automatic Slide Show//
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel,3000);
+    }
+    
+    </script>
+         
+    
+</body>
+</html>
